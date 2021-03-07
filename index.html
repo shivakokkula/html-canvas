@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Game</title>
+        <style>
+            canvas{
+                display: block;
+                margin: 0 auto;
+                background-color:rgb(221, 196, 56);
+            }
+            button{
+                display: block;
+                font-size:xx-large;
+                position: absolute;
+                left: 57%;
+                top: 4%;
+                background-color:darkgoldenrod;
+                margin: 0 auto;
+            }
+            select{
+                display: block;
+                font-size:xx-large;
+                position: absolute;
+                left: 35%;
+                top: 4%;
+                background-color:rgb(11, 149, 184);
+                margin: 0 auto;
+            }
+            button:hover,select:hover{
+                background-color:gold;
+            }
+        </style>
+    </head>
+    <select id="event">
+        <option>draw a circle</option>
+        <option>destroy circle</option>
+    </select>
+    <button onclick="start()">Start Game</button>
+    <canvas id="canvas" width="608" height="608"></canvas>
+    <script src="index.js" ></script>
+</html>
